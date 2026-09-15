@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="180" viewBox="0 0 750 180">
+  <defs>
+    <linearGradient id="stripGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="750" height="180" fill="#f8fafc" rx="8"/>
+  <rect width="750" height="180" fill="none" stroke="#cbd5e1" stroke-width="1" rx="8"/>
+
+  <!-- Urine Strip Body -->
+  <g filter="url(#dropShadow)">
+    <rect x="25" y="42" width="695" height="96" rx="8" fill="url(#stripGrad)" stroke="#94a3b8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Strip Handle Area -->
+  <line x1="105" y1="42" x2="105" y2="138" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="65" y="85" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">HOLD</text>
+  <text x="65" y="102" font-family="'Segoe UI', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">HERE</text>
+
+  <!-- 1. Glucose Pad -->
+  <rect x="120" y="48" width="90" height="84" rx="6" fill="#0d9488" stroke="#042f2e" stroke-width="1.5"/>
+  <rect x="124" y="52" width="82" height="76" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="165" y="86" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">GLUCOSE</text>
+  <text x="165" y="104" font-family="'Segoe UI', sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">Click to inspect</text>
+
+  <!-- 2. Protein Pad -->
+  <rect x="235" y="48" width="90" height="84" rx="6" fill="#84cc16" stroke="#365314" stroke-width="1.5"/>
+  <rect x="239" y="52" width="82" height="76" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="280" y="86" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">PROTEIN</text>
+  <text x="280" y="104" font-family="'Segoe UI', sans-serif" font-size="10" fill="#365314" text-anchor="middle">Click to inspect</text>
+
+  <!-- 3. Blood Pad -->
+  <rect x="350" y="48" width="90" height="84" rx="6" fill="#f59e0b" stroke="#78350f" stroke-width="1.5"/>
+  <rect x="354" y="52" width="82" height="76" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="395" y="86" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">BLOOD</text>
+  <text x="395" y="104" font-family="'Segoe UI', sans-serif" font-size="10" fill="#78350f" text-anchor="middle">Click to inspect</text>
+
+  <!-- 4. Ketone Pad -->
+  <rect x="465" y="48" width="90" height="84" rx="6" fill="#9333ea" stroke="#3b0764" stroke-width="1.5"/>
+  <rect x="469" y="52" width="82" height="76" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="510" y="86" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">KETONE</text>
+  <text x="510" y="104" font-family="'Segoe UI', sans-serif" font-size="10" fill="#f3e8ff" text-anchor="middle">Click to inspect</text>
+
+  <!-- 5. pH Pad -->
+  <rect x="580" y="48" width="90" height="84" rx="6" fill="#ea580c" stroke="#7c2d12" stroke-width="1.5"/>
+  <rect x="584" y="52" width="82" height="76" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="625" y="86" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">pH LEVEL</text>
+  <text x="625" y="104" font-family="'Segoe UI', sans-serif" font-size="10" fill="#ffedd5" text-anchor="middle">Click to inspect</text>
+
+  <!-- Label header -->
+  <text x="375" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">
+    AI-Enabled Multiparameter Urinalysis Test Strip (Model: KJS-HC-03)
+  </text>
+  <text x="375" y="165" font-family="'Segoe UI', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">
+    [ Click on any reagent test pad above to display clinical test parameters and reference limits ]
+  </text>
+</svg>

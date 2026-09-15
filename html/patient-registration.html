@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Laboratory - Online Patient Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="gov-topbar">
+    <div class="gov-topbar-content">
+      <span>K. J. Somaiya School of Engineering | Somaiya Vidyavihar University</span>
+      <span>Experiment No: 1 &bull; Task 7: Online Patient Registration Form</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div>
+        <h1>Somaiya Clinical Laboratory & Diagnostics</h1>
+        <p class="tagline">Accurate Diagnostics for Better Healthcare</p>
+      </div>
+      <div class="header-right">
+        <p><strong>Point-of-Care Technology Unit:</strong> KJS-HC-03</p>
+        <p>Online Patient Registration Portal</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laboratory-tests.html">Laboratory Tests</a></li>
+        <li><a href="test-price-table.html">Health Packages</a></li>
+        <li><a href="patient-registration.html" class="active">Online Registration</a></li>
+        <li><a href="test-details.html">Reports</a></li>
+        <li><a href="health-information.html">Contact Us</a></li>
+        <li><a href="gallery.html">Lab Gallery</a></li>
+        <li><a href="lab-map.html">Interactive Map</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Notice Strip -->
+  <div class="notice-strip">
+    <div class="notice-strip-inner">
+      <strong>REGISTRATION INSTRUCTION</strong> Fields marked with an asterisk (*) are mandatory. Please provide a valid mobile number for receiving test appointment SMS and online report link.
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <main class="content-area">
+      <section>
+        <h2>Patient Online Registration Form</h2>
+        <p>
+          Please fill out the form below to register for laboratory testing or schedule sample collection.
+        </p>
+
+        <!-- HTML Form Requirement -->
+        <form action="#" method="post" enctype="multipart/form-data">
+          
+          <!-- Fieldset 1: Patient Details -->
+          <fieldset>
+            <legend>Section 1: Patient Personal Information</legend>
+
+            <!-- 1. Patient Name (autofocus, required, placeholder) -->
+            <div class="form-row">
+              <label for="patientName">Patient Full Name: *</label>
+              <input type="text" 
+                     id="patientName" 
+                     name="patientName" 
+                     placeholder="Enter patient full name" 
+                     required 
+                     autofocus>
+            </div>
+
+            <!-- 2. Age (number, min, max, required, placeholder) -->
+            <div class="form-row">
+              <label for="patientAge">Age (in completed years): *</label>
+              <input type="number" 
+                     id="patientAge" 
+                     name="patientAge" 
+                     min="1" 
+                     max="120" 
+                     placeholder="Enter age (e.g. 21)" 
+                     required>
+            </div>
+
+            <!-- 3. Gender (radio buttons with label, required) -->
+            <div class="form-row">
+              <label>Gender: *</label>
+              <div class="radio-row">
+                <label>
+                  <input type="radio" name="gender" value="Male" required> Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="Female" required> Female
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="Other" required> Other
+                </label>
+              </div>
+            </div>
+
+            <!-- 4. Date of Birth (date, required) -->
+            <div class="form-row">
+              <label for="dob">Date of Birth: *</label>
+              <input type="date" 
+                     id="dob" 
+                     name="dob" 
+                     required>
+            </div>
+
+            <!-- 5. Mobile Number (tel, pattern, required, placeholder) -->
+            <div class="form-row">
+              <label for="mobileNumber">Mobile Number (10 Digits): *</label>
+              <input type="tel" 
+                     id="mobileNumber" 
+                     name="mobileNumber" 
+                     pattern="[6-9][0-9]{9}" 
+                     placeholder="10-digit mobile number (e.g. 9820123456)" 
+                     required 
+                     title="Please enter a valid 10-digit mobile number">
+            </div>
+
+            <!-- 6. Email (email, required, placeholder) -->
+            <div class="form-row">
+              <label for="emailAddress">Email Address: *</label>
+              <input type="email" 
+                     id="emailAddress" 
+                     name="emailAddress" 
+                     placeholder="patient@somaiya.edu" 
+                     required>
+            </div>
+          </fieldset>
+
+          <!-- Fieldset 2: Test Booking and Appointment Details -->
+          <fieldset>
+            <legend>Section 2: Test Selection and Appointment Details</legend>
+
+            <!-- 7. Test Selection (select, required) -->
+            <div class="form-row">
+              <label for="testSelection">Select Required Laboratory Test: *</label>
+              <select id="testSelection" name="testSelection" required>
+                <option value="" disabled selected>-- Select a Diagnostic Test --</option>
+                <option value="URI-001">Routine Urinalysis (AI Strip Reader KJS-HC-03) - ₹180</option>
+                <option value="URI-002">Urine Microscopy (Sediment Examination) - ₹220</option>
+                <option value="HEM-101">Complete Blood Count (CBC + ESR) - ₹350</option>
+                <option value="HEM-102">Peripheral Blood Smear - ₹250</option>
+                <option value="BIO-201">Liver Function Test (LFT) - ₹650</option>
+                <option value="BIO-202">Kidney Function Test (KFT) - ₹600</option>
+                <option value="BIO-203">Lipid Profile - ₹550</option>
+                <option value="END-301">HbA1c (Glycated Hemoglobin) - ₹450</option>
+                <option value="END-302">Thyroid Profile (Total T3, T4, TSH) - ₹500</option>
+                <option value="PKG-01">Comprehensive Wellness Health Package - ₹1,999</option>
+              </select>
+            </div>
+
+            <!-- 8. Preferred Appointment Date (date, required) -->
+            <div class="form-row">
+              <label for="appointmentDate">Preferred Appointment Date: *</label>
+              <input type="date" 
+                     id="appointmentDate" 
+                     name="appointmentDate" 
+                     required>
+            </div>
+
+            <!-- 9. Sample Collection Preference (radio buttons, required) -->
+            <div class="form-row">
+              <label>Sample Collection Preference: *</label>
+              <div class="radio-row">
+                <label>
+                  <input type="radio" name="collectionType" value="Lab Visit" required checked> Visit Somaiya Diagnostic Lab
+                </label>
+                <label>
+                  <input type="radio" name="collectionType" value="Home Collection" required> Home Sample Collection
+                </label>
+              </div>
+            </div>
+
+            <!-- 10. Upload Doctor Prescription (file upload) -->
+            <div class="form-row">
+              <label for="doctorPrescription">Upload Doctor Prescription (Optional - PDF, JPG, PNG):</label>
+              <input type="file" 
+                     id="doctorPrescription" 
+                     name="doctorPrescription" 
+                     accept=".pdf, .jpg, .jpeg, .png">
+            </div>
+          </fieldset>
+
+          <!-- Form Buttons -->
+          <div class="form-buttons">
+            <input type="submit" value="Submit Registration">
+            <input type="reset" value="Reset Form">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Aside / Sidebar -->
+    <aside>
+      <div class="box">
+        <h3>Task 7 HTML Form Features</h3>
+        <ul>
+          <li><code>&lt;fieldset&gt;</code> &amp; <code>&lt;legend&gt;</code> tags used</li>
+          <li><code>&lt;label&gt;</code> used for all form controls</li>
+          <li><code>autofocus</code> on Patient Name</li>
+          <li><code>placeholder</code> on all text inputs</li>
+          <li><code>pattern="[6-9][0-9]{9}"</code> for mobile validation</li>
+          <li><code>required</code> attribute on mandatory fields</li>
+          <li>HTML5 input types: <code>text, number, tel, email, date, radio, file</code></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Instructions for Patients</h3>
+        <p class="alert-box">
+          After submitting this form, you will receive an SMS confirmation containing your appointment token number.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p>&copy; 2026 Somaiya Clinical Laboratory & Diagnostics. All rights reserved.</p>
+        <p>Department of Computer Engineering, K. J. Somaiya School of Engineering.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="laboratory-tests.html">Tests</a>
+        <a href="test-price-table.html">Tariff</a>
+        <a href="health-information.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Laboratory - Health Information Centre (IFrame)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="gov-topbar">
+    <div class="gov-topbar-content">
+      <span>K. J. Somaiya School of Engineering | Somaiya Vidyavihar University</span>
+      <span>Experiment No: 1 &bull; Task 8: Embed Health Information using IFrame</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div>
+        <h1>Somaiya Clinical Laboratory & Diagnostics</h1>
+        <p class="tagline">Accurate Diagnostics for Better Healthcare</p>
+      </div>
+      <div class="header-right">
+        <p><strong>Point-of-Care Technology Unit:</strong> KJS-HC-03</p>
+        <p>External Web Resources Portal</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laboratory-tests.html">Laboratory Tests</a></li>
+        <li><a href="test-price-table.html">Health Packages</a></li>
+        <li><a href="patient-registration.html">Online Registration</a></li>
+        <li><a href="test-details.html">Reports</a></li>
+        <li><a href="health-information.html" class="active">Contact Us</a></li>
+        <li><a href="gallery.html">Lab Gallery</a></li>
+        <li><a href="lab-map.html">Interactive Map</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Notice Strip -->
+  <div class="notice-strip">
+    <div class="notice-strip-inner">
+      <strong>RESOURCE NOTICE</strong> Verified health guidelines sourced from the National Health Portal, Government of India.
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <main class="content-area">
+      <!-- Required Heading: Health Information Centre -->
+      <section>
+        <h2>Health Information Centre</h2>
+        <p>
+          Welcome to the Health Information Centre. Below you can find embedded public healthcare resources from the National Health Portal and directions to locate our laboratory on Google Maps.
+        </p>
+
+        <!-- IFrame 1: National Health Portal -->
+        <h3>National Health Portal (India)</h3>
+        <p>
+          Official public health information and disease prevention resources:
+        </p>
+        <div class="iframe-wrapper">
+          <iframe src="https://en.wikipedia.org/wiki/National_Health_Portal" 
+                  title="National Health Portal Information" 
+                  width="100%" 
+                  height="350">
+          </iframe>
+        </div>
+        <p>
+          <small>Direct Link: <a href="https://www.nhp.gov.in" target="_blank">Open National Health Portal in new tab</a></small>
+        </p>
+
+        <hr>
+
+        <!-- IFrame 2: Google Maps Location -->
+        <h3>Google Maps showing laboratory location</h3>
+        <p>
+          Laboratory location on Somaiya Vidyavihar campus, Mumbai:
+        </p>
+        <div class="iframe-wrapper">
+          <iframe src="https://maps.google.com/maps?q=Somaiya+Vidyavihar+University+Mumbai&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+                  title="Google Maps showing laboratory location" 
+                  width="100%" 
+                  height="350">
+          </iframe>
+        </div>
+        <p>
+          <small>Address: Somaiya Vidyavihar Campus, Vidyavihar East, Mumbai - 400077, Maharashtra, India.</small>
+        </p>
+
+      </section>
+    </main>
+
+    <!-- Aside / Sidebar -->
+    <aside>
+      <div class="box">
+        <h3>Contact Laboratory</h3>
+        <p>
+          <strong>Reception &amp; Sample Desk:</strong><br>
+          Room 102, Ground Floor,<br>
+          Engineering Building,<br>
+          Somaiya Vidyavihar (East),<br>
+          Mumbai - 400077.
+        </p>
+        <p class="alert-box">
+          <strong>Direct Line:</strong><br>
+          +91 (022) 6728-3000<br>
+          Extension: 3021
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Task 8 Concepts</h3>
+        <ul>
+          <li><code>&lt;iframe&gt;</code> element used</li>
+          <li>Embed National Health Portal</li>
+          <li>Embed Google Maps location</li>
+          <li>Grouped under <strong>Health Information Centre</strong></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p>&copy; 2026 Somaiya Clinical Laboratory & Diagnostics. All rights reserved.</p>
+        <p>Department of Computer Engineering, K. J. Somaiya School of Engineering.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="laboratory-tests.html">Tests</a>
+        <a href="test-price-table.html">Tariff</a>
+        <a href="patient-registration.html">Register</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

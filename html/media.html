@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Laboratory - Patient Awareness & Media</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Task 9: JavaScript Alert on Page Load -->
+  <script>
+    alert("Welcome to the Clinical Laboratory Management System");
+  </script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="gov-topbar">
+    <div class="gov-topbar-content">
+      <span>K. J. Somaiya School of Engineering | Somaiya Vidyavihar University</span>
+      <span>Experiment No: 1 &bull; Task 9: Add Multimedia & Executable Content</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div>
+        <h1>Somaiya Clinical Laboratory & Diagnostics</h1>
+        <p class="tagline">Accurate Diagnostics for Better Healthcare</p>
+      </div>
+      <div class="header-right">
+        <p><strong>Point-of-Care Technology Unit:</strong> KJS-HC-03</p>
+        <p>Patient Awareness Media Portal</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laboratory-tests.html">Laboratory Tests</a></li>
+        <li><a href="test-price-table.html">Health Packages</a></li>
+        <li><a href="patient-registration.html">Online Registration</a></li>
+        <li><a href="test-details.html">Reports</a></li>
+        <li><a href="health-information.html">Contact Us</a></li>
+        <li><a href="gallery.html">Lab Gallery</a></li>
+        <li><a href="lab-map.html">Interactive Map</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Notice Strip -->
+  <div class="notice-strip">
+    <div class="notice-strip-inner">
+      <strong>MEDIA NOTICE</strong> Please review the sample collection video and pre-testing audio instructions carefully before visiting the sample counter.
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <main class="content-area">
+      <section>
+        <h2>Patient Awareness & Multimedia Instructions</h2>
+        <p>
+          This page contains educational multimedia resources for patients explaining standard laboratory procedures and preparation steps.
+        </p>
+
+        <!-- Media Container -->
+        <div class="media-container">
+          
+          <!-- 1. Video Component -->
+          <div class="media-box">
+            <h3>Video: Laboratory Sample Collection Procedures</h3>
+            <p>
+              Video explaining laboratory sample collection procedures for blood drawing and urine sample handling:
+            </p>
+            <!-- Video element with controls, autoplay, loop (muted added for browser autoplay policy compliance) -->
+            <video controls autoplay loop muted>
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>
+              <small>Attributes: <code>controls</code>, <code>autoplay</code>, <code>loop</code>.</small>
+            </p>
+          </div>
+
+          <!-- 2. Audio Component -->
+          <div class="media-box">
+            <h3>Audio: Instructions for Patients Before Testing</h3>
+            <p>
+              Audio instructions for patients before testing covering fasting guidelines and hydration:
+            </p>
+            <!-- Audio element with controls, autoplay, loop -->
+            <audio controls autoplay loop>
+              <source src="assets/audio-instructions.wav" type="audio/wav">
+              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+            <p>
+              <small>Attributes: <code>controls</code>, <code>autoplay</code>, <code>loop</code>.</small>
+            </p>
+            <div class="alert-box">
+              <strong>Audio Transcript Key Points:</strong>
+              <ul>
+                <li>Maintain 10-12 hours overnight fasting for fasting glucose and lipid profiles.</li>
+                <li>Drink normal drinking water to remain hydrated.</li>
+                <li>Collect first morning midstream urine for urinalysis.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Executable JavaScript Alert Section -->
+      <section>
+        <h2>Executable Content (JavaScript Alert)</h2>
+        <p>
+          As required by Task 9, a JavaScript alert is embedded directly inside the <code>&lt;script&gt;</code> element in the page head, executing upon page load:
+        </p>
+        <p class="alert-box">
+          <code>alert("Welcome to the Clinical Laboratory Management System");</code>
+        </p>
+        <p>
+          You can test the alert box again by clicking the button below:
+        </p>
+        <button type="button" onclick="alert('Welcome to the Clinical Laboratory Management System');">
+          Click to Trigger Alert Box
+        </button>
+      </section>
+    </main>
+
+    <!-- Aside / Sidebar -->
+    <aside>
+      <div class="box">
+        <h3>Task 9 Checklist</h3>
+        <ul>
+          <li><code>&lt;video&gt;</code> element with sample collection procedures</li>
+          <li><code>&lt;audio&gt;</code> element with pre-testing audio instructions</li>
+          <li><code>controls</code> enabled</li>
+          <li><code>autoplay</code> enabled</li>
+          <li><code>loop</code> enabled</li>
+          <li><code>&lt;script&gt;</code> element with alert message</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Help Desk</h3>
+        <p>
+          For technical difficulties playing media, please contact the laboratory IT support at <strong>lab-it@somaiya.edu</strong>.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p>&copy; 2026 Somaiya Clinical Laboratory & Diagnostics. All rights reserved.</p>
+        <p>Department of Computer Engineering, K. J. Somaiya School of Engineering.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="laboratory-tests.html">Tests</a>
+        <a href="test-price-table.html">Tariff</a>
+        <a href="patient-registration.html">Register</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

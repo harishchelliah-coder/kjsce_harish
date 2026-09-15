@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Laboratory - Laboratory Test Price Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="gov-topbar">
+    <div class="gov-topbar-content">
+      <span>K. J. Somaiya School of Engineering | Somaiya Vidyavihar University</span>
+      <span>Experiment No: 1 &bull; Task 6: Laboratory Test Price Table</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div>
+        <h1>Somaiya Clinical Laboratory & Diagnostics</h1>
+        <p class="tagline">Accurate Diagnostics for Better Healthcare</p>
+      </div>
+      <div class="header-right">
+        <p><strong>Point-of-Care Technology Unit:</strong> KJS-HC-03</p>
+        <p>Diagnostic Test Tariff &amp; Fee Schedule</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laboratory-tests.html">Laboratory Tests</a></li>
+        <li><a href="test-price-table.html" class="active">Health Packages</a></li>
+        <li><a href="patient-registration.html">Online Registration</a></li>
+        <li><a href="test-details.html">Reports</a></li>
+        <li><a href="health-information.html">Contact Us</a></li>
+        <li><a href="gallery.html">Lab Gallery</a></li>
+        <li><a href="lab-map.html">Interactive Map</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Notice Strip -->
+  <div class="notice-strip">
+    <div class="notice-strip-inner">
+      <strong>TARIFF NOTICE</strong> Subsidized charges for Somaiya Vidyavihar campus students and staff on presentation of valid Somaiya Identity Card.
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <main class="content-area full-width">
+      <section>
+        <h2>Diagnostic Test Tariff and Charges Schedule</h2>
+        <p>
+          Official schedule of charges for laboratory diagnostic services approved for the academic year 2026-27:
+        </p>
+
+        <!-- HTML Table Requirement -->
+        <table border="1">
+          <!-- Caption Requirement -->
+          <caption>Clinical Laboratory Diagnostic Test Price List and Turnaround Schedule</caption>
+
+          <!-- Thead Requirement -->
+          <thead>
+            <tr>
+              <th>Department</th>
+              <th>Test Code</th>
+              <th>Test Name</th>
+              <th>Sample Type</th>
+              <th>Cost (₹)</th>
+              <th>Report Time</th>
+            </tr>
+          </thead>
+
+          <!-- Tbody Requirement with Rowspan and Colspan -->
+          <tbody>
+            <!-- Department 1: Clinical Pathology (rowspan = 2) -->
+            <tr>
+              <td rowspan="2"><strong>Clinical Pathology &amp; POCT</strong></td>
+              <td>URI-001</td>
+              <td>Routine Urinalysis (AI Strip Reader KJS-HC-03)</td>
+              <td>Urine (Midstream)</td>
+              <td>180</td>
+              <td>2 Hours</td>
+            </tr>
+            <tr>
+              <td>URI-002</td>
+              <td>Urine Microscopy (Sediment Examination)</td>
+              <td>Urine (Midstream)</td>
+              <td>220</td>
+              <td>3 Hours</td>
+            </tr>
+
+            <!-- Department 2: Hematology (rowspan = 2) -->
+            <tr>
+              <td rowspan="2"><strong>Hematology</strong></td>
+              <td>HEM-101</td>
+              <td>Complete Blood Count (CBC with ESR)</td>
+              <td>Whole Blood (EDTA)</td>
+              <td>350</td>
+              <td>4 Hours</td>
+            </tr>
+            <tr>
+              <td>HEM-102</td>
+              <td>Peripheral Blood Smear Examination</td>
+              <td>Blood Smear Slide</td>
+              <td>250</td>
+              <td>6 Hours</td>
+            </tr>
+
+            <!-- Department 3: Clinical Biochemistry (rowspan = 3) -->
+            <tr>
+              <td rowspan="3"><strong>Clinical Biochemistry</strong></td>
+              <td>BIO-201</td>
+              <td>Liver Function Test (LFT - Complete Panel)</td>
+              <td>Serum</td>
+              <td>650</td>
+              <td>6 Hours</td>
+            </tr>
+            <tr>
+              <td>BIO-202</td>
+              <td>Kidney Function Test (KFT / RFT)</td>
+              <td>Serum</td>
+              <td>600</td>
+              <td>6 Hours</td>
+            </tr>
+            <tr>
+              <td>BIO-203</td>
+              <td>Lipid Profile (Cholesterol, HDL, LDL, Triglycerides)</td>
+              <td>Fasting Serum</td>
+              <td>550</td>
+              <td>6 Hours</td>
+            </tr>
+
+            <!-- Department 4: Diabetology & Endocrinology (rowspan = 2) -->
+            <tr>
+              <td rowspan="2"><strong>Diabetology &amp; Endocrinology</strong></td>
+              <td>END-301</td>
+              <td>HbA1c (Glycated Hemoglobin)</td>
+              <td>Whole Blood (EDTA)</td>
+              <td>450</td>
+              <td>4 Hours</td>
+            </tr>
+            <tr>
+              <td>END-302</td>
+              <td>Thyroid Profile (Total T3, Total T4, TSH)</td>
+              <td>Serum</td>
+              <td>500</td>
+              <td>8 Hours</td>
+            </tr>
+
+            <!-- Special Package Row with Colspan -->
+            <tr>
+              <td colspan="2"><strong>Special Health Package</strong></td>
+              <td colspan="2">Comprehensive Full Body Profile (CBC + Urine Strip + LFT + KFT + Lipid)</td>
+              <td><strong>1,999</strong></td>
+              <td>Same Day (8 Hours)</td>
+            </tr>
+          </tbody>
+
+          <!-- Tfoot Requirement with Colspan -->
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <strong>Important Note:</strong> Emergency (STAT) processing available on request with an additional surcharge of ₹150 per sample. All rates are inclusive of government GST.
+              </td>
+              <td colspan="2">
+                <strong>Discount:</strong> 20% concession for students on producing College ID card.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+      </section>
+
+      <!-- Institutional Packages Section -->
+      <section>
+        <h2>Health Checkup Packages</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Package Name</th>
+              <th>Target Group</th>
+              <th>Included Tests</th>
+              <th>Package Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Basic Student Health Screen</strong></td>
+              <td>College Students / Youth</td>
+              <td>CBC, Urinalysis (Strip Reader), Blood Grouping, Random Sugar</td>
+              <td>₹650</td>
+            </tr>
+            <tr>
+              <td><strong>Diabetic Care Package</strong></td>
+              <td>Diabetic Patients</td>
+              <td>Fasting Glucose, Post-Prandial Glucose, HbA1c, Microalbuminuria, KFT</td>
+              <td>₹1,250</td>
+            </tr>
+            <tr>
+              <td><strong>Senior Citizen Diagnostic Screen</strong></td>
+              <td>Individuals aged 60+</td>
+              <td>CBC, Urinalysis, Complete LFT, Complete KFT, Lipid Profile, Thyroid TSH</td>
+              <td>₹2,100</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p>&copy; 2026 Somaiya Clinical Laboratory & Diagnostics. All rights reserved.</p>
+        <p>Department of Computer Engineering, K. J. Somaiya School of Engineering.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="laboratory-tests.html">Tests</a>
+        <a href="patient-registration.html">Register Online</a>
+        <a href="health-information.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+/* ==========================================================================
+   Somaiya Clinical Laboratory & Diagnostics - Sleek Grey Theme
+   Experiment No: 1 - Web Development Laboratory (Semester III)
+   Department of Computer Engineering, K. J. Somaiya School of Engineering
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #edf2f7;
+  color: #2d3748;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Institutional Top Bar (Govt / University Portal Style) */
+.gov-topbar {
+  background-color: #1a202c;
+  color: #cbd5e0;
+  padding: 6px 20px;
+  font-size: 12px;
+  border-bottom: 1px solid #4a5568;
+}
+
+.gov-topbar-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Main Header */
+header {
+  background-color: #2d3748;
+  color: #ffffff;
+  padding: 16px 20px;
+  border-bottom: 3px solid #718096;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f7fafc;
+  margin-bottom: 4px;
+}
+
+.header-container .tagline {
+  font-size: 13px;
+  font-style: italic;
+  color: #e2e8f0;
+}
+
+.header-right {
+  font-size: 12px;
+  text-align: right;
+  color: #cbd5e0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #4a5568;
+  border-bottom: 2px solid #2d3748;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  border-right: 1px solid #718096;
+}
+
+nav li a {
+  display: block;
+  color: #f7fafc;
+  text-decoration: none;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+nav li a.active {
+  background-color: #1a202c;
+  color: #ffffff;
+}
+
+/* Notice Ticker Bar (Govt / Institutional Feature) */
+.notice-strip {
+  background-color: #e2e8f0;
+  border-bottom: 1px solid #cbd5e0;
+  padding: 6px 20px;
+  font-size: 13px;
+}
+
+.notice-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #2d3748;
+}
+
+.notice-strip strong {
+  background-color: #4a5568;
+  color: #ffffff;
+  padding: 2px 6px;
+  margin-right: 8px;
+  font-size: 11px;
+}
+
+/* Main Layout */
+.main-container {
+  max-width: 1100px;
+  margin: 18px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-area {
+  flex: 1 1 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-area.full-width {
+  flex: 1 1 100%;
+}
+
+aside {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Standard Content Blocks (Section, Article, Cards) */
+section, article, .box {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  padding: 18px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #2d3748;
+  border-bottom: 2px solid #718096;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 15px;
+  color: #2d3748;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cbd5e0;
+  margin: 14px 0;
+}
+
+mark {
+  background-color: #e2e8f0;
+  color: #1a202c;
+  padding: 1px 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #718096;
+}
+
+.alert-box {
+  background-color: #edf2f7;
+  border-left: 4px solid #4a5568;
+  padding: 10px 12px;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+/* Lists */
+ol, ul {
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+dl {
+  background-color: #f7fafc;
+  border: 1px solid #cbd5e0;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+dt {
+  font-weight: bold;
+  color: #2d3748;
+  margin-top: 8px;
+}
+
+dd {
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
+/* Tables (Official Lab Style with Solid Borders) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+table, th, td {
+  border: 1px solid #718096;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2d3748;
+  padding: 8px;
+  background-color: #e2e8f0;
+  border: 1px solid #718096;
+  border-bottom: none;
+}
+
+th {
+  background-color: #4a5568;
+  color: #ffffff;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+td {
+  padding: 8px 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+tfoot td {
+  background-color: #edf2f7;
+  font-weight: bold;
+}
+
+/* Forms (Classic Government/University Portal Style) */
+fieldset {
+  border: 1px solid #718096;
+  padding: 14px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+}
+
+legend {
+  font-weight: bold;
+  color: #2d3748;
+  padding: 0 6px;
+  font-size: 14px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"],
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #a0aec0;
+  font-size: 13px;
+  font-family: inherit;
+  background-color: #ffffff;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #2d3748;
+  outline: none;
+}
+
+.radio-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 4px;
+}
+
+.radio-row label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.form-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="submit"], button {
+  background-color: #4a5568;
+  color: #ffffff;
+  border: 1px solid #2d3748;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #2d3748;
+}
+
+input[type="reset"] {
+  background-color: #edf2f7;
+  color: #2d3748;
+  border: 1px solid #a0aec0;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #cbd5e0;
+}
+
+/* Gallery (Clean Academic Style) */
+.gallery-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+figure {
+  flex: 1 1 230px;
+  border: 1px solid #cbd5e0;
+  background-color: #ffffff;
+  padding: 6px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #e2e8f0;
+}
+
+figcaption {
+  padding: 6px 4px 2px;
+  font-size: 12px;
+  color: #2d3748;
+}
+
+/* Image Map Section */
+.image-map-box {
+  text-align: center;
+  border: 1px solid #a0aec0;
+  background-color: #ffffff;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.image-map-box img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cbd5e0;
+}
+
+.pad-details {
+  border: 1px solid #cbd5e0;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #f7fafc;
+}
+
+/* Multimedia (Video & Audio) */
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.media-box {
+  flex: 1 1 300px;
+  border: 1px solid #cbd5e0;
+  padding: 12px;
+  background-color: #ffffff;
+}
+
+video {
+  width: 100%;
+  border: 1px solid #718096;
+  background-color: #000000;
+}
+
+audio {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* IFrame Container */
+.iframe-wrapper {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #718096;
+}
+
+/* Footer (Institutional Style) */
+footer {
+  background-color: #2d3748;
+  color: #cbd5e0;
+  padding: 20px 15px;
+  margin-top: 25px;
+  border-top: 3px solid #718096;
+  font-size: 12px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-inner a {
+  color: #e2e8f0;
+  text-decoration: underline;
+  margin-right: 12px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  aside {
+    flex: 1 1 100%;
+  }
+}

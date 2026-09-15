@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Laboratory - Interactive Image Map of Test Strip</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="gov-topbar">
+    <div class="gov-topbar-content">
+      <span>K. J. Somaiya School of Engineering | Somaiya Vidyavihar University</span>
+      <span>Experiment No: 1 &bull; Task 5: Interactive Image Map of Test Strip</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div>
+        <h1>Somaiya Clinical Laboratory & Diagnostics</h1>
+        <p class="tagline">Accurate Diagnostics for Better Healthcare</p>
+      </div>
+      <div class="header-right">
+        <p><strong>Point-of-Care Technology Unit:</strong> KJS-HC-03</p>
+        <p>AI-Enabled Test Strip Diagnostic Module</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laboratory-tests.html">Laboratory Tests</a></li>
+        <li><a href="test-price-table.html">Health Packages</a></li>
+        <li><a href="patient-registration.html">Online Registration</a></li>
+        <li><a href="test-details.html">Reports</a></li>
+        <li><a href="health-information.html">Contact Us</a></li>
+        <li><a href="gallery.html">Lab Gallery</a></li>
+        <li><a href="lab-map.html" class="active">Interactive Map</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Notice Strip -->
+  <div class="notice-strip">
+    <div class="notice-strip-inner">
+      <strong>LAB INSTRUCTION</strong> Click directly on any colored reagent pad on the test strip image below to jump to its clinical test parameters.
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <main class="content-area full-width">
+      <section>
+        <h2>Interactive Urine Test Strip (Image Map)</h2>
+        <p>
+          Urine test strips contain chemical reagent pads that change color when dipped into urine. Click on any of the five reagent pads (<strong>Glucose Pad, Protein Pad, Blood Pad, Ketone Pad, or pH Pad</strong>) below to inspect its testing principle and reference values:
+        </p>
+
+        <!-- Image Map Container -->
+        <div class="image-map-box">
+          <img src="assets/urine-strip.svg" 
+               alt="Interactive Urine Test Strip Image Map" 
+               width="750" 
+               height="180" 
+               usemap="#test-strip-map">
+
+          <!-- HTML Map Element -->
+          <map name="test-strip-map">
+            <!-- Glucose Pad -->
+            <area shape="rect" 
+                  coords="120,48,210,132" 
+                  href="#glucose-pad" 
+                  alt="Glucose Pad" 
+                  title="Glucose Pad (Click to jump to details)">
+
+            <!-- Protein Pad -->
+            <area shape="rect" 
+                  coords="235,48,325,132" 
+                  href="#protein-pad" 
+                  alt="Protein Pad" 
+                  title="Protein Pad (Click to jump to details)">
+
+            <!-- Blood Pad -->
+            <area shape="rect" 
+                  coords="350,48,440,132" 
+                  href="#blood-pad" 
+                  alt="Blood Pad" 
+                  title="Blood Pad (Click to jump to details)">
+
+            <!-- Ketone Pad -->
+            <area shape="rect" 
+                  coords="465,48,555,132" 
+                  href="#ketone-pad" 
+                  alt="Ketone Pad" 
+                  title="Ketone Pad (Click to jump to details)">
+
+            <!-- pH Pad -->
+            <area shape="rect" 
+                  coords="580,48,670,132" 
+                  href="#ph-pad" 
+                  alt="pH Pad" 
+                  title="pH Pad (Click to jump to details)">
+          </map>
+        </div>
+      </section>
+
+      <!-- Reagent Pad Details Section -->
+      <section>
+        <h2>Test Strip Reagent Pad Clinical Details</h2>
+
+        <!-- 1. Glucose Pad -->
+        <div class="pad-details" id="glucose-pad">
+          <h3>1. Glucose Pad</h3>
+          <p>
+            <strong>Test Parameter:</strong> Urinary Glucose (Glycosuria)<br>
+            <strong>Chemical Reaction:</strong> Glucose Oxidase &ndash; Peroxidase enzymatic chromogen reaction.<br>
+            <strong>Normal Range:</strong> Negative (&lt; 15 mg/dL)<br>
+            <strong>Clinical Significance:</strong> Used for screening diabetes mellitus and renal glycosuria.
+          </p>
+        </div>
+
+        <!-- 2. Protein Pad -->
+        <div class="pad-details" id="protein-pad">
+          <h3>2. Protein Pad</h3>
+          <p>
+            <strong>Test Parameter:</strong> Urinary Protein / Albumin (Proteinuria)<br>
+            <strong>Chemical Reaction:</strong> Protein-error-of-indicators with tetrabromphenol blue.<br>
+            <strong>Normal Range:</strong> Negative to Trace (&lt; 10 mg/dL)<br>
+            <strong>Clinical Significance:</strong> Early biomarker for renal disease, nephritis, and hypertensive kidney damage.
+          </p>
+        </div>
+
+        <!-- 3. Blood Pad -->
+        <div class="pad-details" id="blood-pad">
+          <h3>3. Blood Pad</h3>
+          <p>
+            <strong>Test Parameter:</strong> Occult Blood / Free Hemoglobin (Hematuria)<br>
+            <strong>Chemical Reaction:</strong> Pseudoperoxidase activity of hemoglobin oxidizing tetramethylbenzidine.<br>
+            <strong>Normal Range:</strong> Negative (0 &ndash; 3 RBCs/HPF)<br>
+            <strong>Clinical Significance:</strong> Indicates urinary tract infection, kidney stones, trauma, or glomerulonephritis.
+          </p>
+        </div>
+
+        <!-- 4. Ketone Pad -->
+        <div class="pad-details" id="ketone-pad">
+          <h3>4. Ketone Pad</h3>
+          <p>
+            <strong>Test Parameter:</strong> Ketone Bodies / Acetoacetic Acid (Ketonuria)<br>
+            <strong>Chemical Reaction:</strong> Legal's test with sodium nitroprusside in alkaline buffer.<br>
+            <strong>Normal Range:</strong> Negative (&lt; 5 mg/dL)<br>
+            <strong>Clinical Significance:</strong> Critical marker for diabetic ketoacidosis (DKA), prolonged fasting, or starvation.
+          </p>
+        </div>
+
+        <!-- 5. pH Pad -->
+        <div class="pad-details" id="ph-pad">
+          <h3>5. pH Pad</h3>
+          <p>
+            <strong>Test Parameter:</strong> Urinary pH (Acid-Base Balance)<br>
+            <strong>Chemical Reaction:</strong> Dual indicator system (Methyl Red and Bromothymol Blue).<br>
+            <strong>Normal Range:</strong> 4.5 &ndash; 8.0 (Normal average is approximately 6.0)<br>
+            <strong>Clinical Significance:</strong> Evaluates kidney tubular acidosis, systemic acid-base balance, and kidney stone risk.
+          </p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p>&copy; 2026 Somaiya Clinical Laboratory & Diagnostics. All rights reserved.</p>
+        <p>Department of Computer Engineering, K. J. Somaiya School of Engineering.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="laboratory-tests.html">Tests</a>
+        <a href="test-price-table.html">Tariff</a>
+        <a href="patient-registration.html">Register</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
